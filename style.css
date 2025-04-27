@@ -1,3 +1,59 @@
-li {
-    color: darkblue;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;           
+    margin-right: 20px;       
+}
+
+.nav-bar {
+    background-color: #2e2e2e;
+    padding: 15px;            
+}
+
+.nav-list {
+    list-style: none;         
+    padding: 0;               
+    margin: 0;                
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;    
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 53px);
+}
+
+.left-box {
+    width: 30%;    /* Takes up 75% of the container */
+    background-color: #ead1ab6d;
+    display: flex;           /* Added */
+    flex-direction: column;  /* Added */
+    align-items: center;     /* Added - centers children horizontally */
+    padding-top: 2rem;      /* Added - space at top */
+}
+
+.right-box {
+    width: 70%;    /* Takes up 25% of the container */
+    background-color: #fffff8;
+}
+
+.content {
+    padding: 20px;
+}
+
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;     /* Makes container circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem;    /* Space below the container */
 }
